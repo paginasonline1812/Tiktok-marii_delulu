@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mariitoys | Perfil</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 280px;
+      background: #000;
+      border-right: 1px solid #222;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-item {
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .menu-item:hover { background: #1a1a1a; }
+    .main-content { flex: 1; overflow-y: auto; }
+    .header {
+      padding: 15px 30px;
+      border-bottom: 1px solid #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .profile { text-align: center; padding: 30px 0; }
+    .avatar {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      border: 4px solid #ff2d55;
+      margin: 0 auto 15px;
+      object-fit: cover;
+    }
+    .username { font-size: 26px; font-weight: 700; }
+    .handle { color: #aaa; margin-bottom: 20px; }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 25px 0;
+    }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-size: 22px; }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .follow { background: #ff2d55; color: white; border: none; }
+    .message { background: #1f1f1f; color: white; border: none; }
+    .content {
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra lateral -->
+  <div class="sidebar">
+    <div class="menu-item">🏠 Para ti</div>
+    <div class="menu-item">🔍 Explorar</div>
+    <div class="menu-item">❤️ Siguiendo</div>
+    <div class="menu-item">📺 LIVE</div>
+    <div class="menu-item">📤 Cargar</div>
+    <div class="menu-item">👤 Perfil</div>
+    <div class="menu-item">⋯ Más</div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <div class="header">
+      <div style="font-size:22px; font-weight:bold;">mariitoys</div>
+      <div>🔎 Buscar</div>
+      <div>⋯</div>
+    </div>
+
+    <div class="profile">
+      <img src="avatar.jpg" class="avatar" alt="Perfil">  <!-- Sube tu foto con este nombre -->
+
+      <div class="username">mariitoys</div>
+      <div class="handle">mari_delulu</div>
+
+      <div class="stats">
+        <div class="stat"><strong>104</strong>Siguiendo</div>
+        <div class="stat"><strong>191</strong>Seguidores</div>
+        <div class="stat"><strong>48.6K</strong>Me gusta</div>
+      </div>
+
+      <div class="buttons">
+        <button class="follow">Seguir</button>
+        <button class="message">Mensaje</button>
+        <button>↗</button>
+      </div>
+
+      <div style="color:#aaa; margin-top:10px;">No bio yet.</div>
+    </div>
+
+    <div style="text-align:center; padding:20px; border-top:1px solid #222;">
+      <span style="border-bottom:3px solid white; padding-bottom:8px;">Videos</span>
+    </div>
+
+    <div class="content">
+      <p class="private">Esta cuenta es privada</p>
+      <p>Follow this account to see their contents and likes</p>
+    </div>
+  </div>
+</body>
+</html>
